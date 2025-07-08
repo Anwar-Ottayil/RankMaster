@@ -1,0 +1,101 @@
+Text,OptionA,OptionB,OptionC,OptionD,CorrectOption
+Who was the first Prime Minister of India?,Jawaharlal Nehru,Mahatma Gandhi,Rajendra Prasad,Sardar Patel,A
+What is the chemical formula of water?,H2,H2O,HO2,OH2,B
+Which organ is responsible for pumping blood?,Liver,Brain,Heart,Kidney,C
+Which freedom fighter is known as 'Netaji'?,Bhagat Singh,Jawaharlal Nehru,Subhas Chandra Bose,Lala Lajpat Rai,C
+Who discovered gravity?,Newton,Einstein,Galileo,Faraday,A
+Which state is known as the 'Land of Spices'?,Tamil Nadu,Kerala,Goa,Karnataka,B
+Which gas do plants absorb from the atmosphere?,Oxygen,Nitrogen,Carbon Dioxide,Hydrogen,C
+Which river is the longest in India?,Yamuna,Godavari,Ganga,Brahmaputra,C
+Who wrote 'Ramayana'?,Kalidasa,Valmiki,Vyasa,Tulsidas,B
+Which planet is called the Blue Planet?,Mars,Earth,Jupiter,Venus,B
+Where is the Taj Mahal located?,Delhi,Jaipur,Agra,Mumbai,C
+Which metal is used in making electric wires?,Aluminium,Zinc,Iron,Copper,D
+What is the capital of Kerala?,Kozhikode,Kochi,Thiruvananthapuram,Thrissur,C
+Which Indian festival is known as the Festival of Lights?,Holi,Diwali,Eid,Pongal,B
+How many bones are there in an adult human body?,206,208,200,210,A
+In which year did India become a Republic?,1947,1949,1950,1952,C
+Which is the smallest continent?,Europe,Australia,Antarctica,Asia,B
+Which element is needed for respiration?,Hydrogen,Nitrogen,Oxygen,Carbon,C
+Who invented the light bulb?,Newton,Graham Bell,Edison,Tesla,C
+What is the main source of energy for Earth?,Wind,Sun,Water,Electricity,B
+Which of these is not a primary color?,Red,Blue,Green,Yellow,D
+The study of plants is called:,Zoology,Botany,Geology,Ecology,B
+Which vitamin is obtained from sunlight?,Vitamin A,Vitamin B,Vitamin C,Vitamin D,D
+Which device is used to measure atmospheric pressure?,Thermometer,Barometer,Hygrometer,Anemometer,B
+Which of these is not a natural fiber?,Cotton,Jute,Silk,Nylon,D
+The largest planet in our solar system is:,Earth,Jupiter,Saturn,Mars,B
+Which gas is most abundant in Earth's atmosphere?,Oxygen,Nitrogen,Carbon Dioxide,Argon,B
+The process of water turning into vapor is called:,Condensation,Evaporation,Precipitation,Transpiration,B
+Which country is known as the Land of the Rising Sun?,China,Japan,India,Korea,B
+The capital of Australia is:,Sydney,Melbourne,Canberra,Perth,C
+Which of these is not a computer input device?,Keyboard,Mouse,Printer,Scanner,C
+The chemical symbol for sodium is:,So,Sd,Na,No,C
+Which of these is not a greenhouse gas?,Carbon Dioxide,Methane,Nitrous Oxide,Oxygen,D
+The largest ocean on Earth is:,Atlantic,Indian,Pacific,Arctic,C
+Which of these is not a bone in the human body?,Femur,Radius,Tibia,Cornea,D
+The national bird of India is:,Peacock,Pigeon,Parrot,Eagle,A
+Which of these is not a programming language?,Java,Python,HTML,Photoshop,D
+The instrument used to measure earthquake intensity is:,Thermometer,Barometer,Seismograph,Hygrometer,C
+Which of these is not a metal?,Gold,Silver,Iodine,Copper,C
+The largest democracy in the world is:,USA,India,China,Russia,B
+Which of these is not a state in India?,Goa,Pondicherry,Delhi,Mumbai,D
+The first woman Prime Minister of India was:,Sonia Gandhi,Indira Gandhi,Pratibha Patil,Sarojini Naidu,B
+Which of these is not a planet in our solar system?,Mercury,Venus,Pluto,Jupiter,C
+The national flower of India is:,Rose,Lotus,Sunflower,Jasmine,B
+Which of these is not a computer operating system?,Windows,Linux,Android,Google,C
+The chemical symbol for iron is:,Ir,In,Fe,Io,C
+Which of these is not a component of blood?,Plasma,Platelets,Hormones,White Blood Cells,C
+The national animal of India is:,Lion,Tiger,Elephant,Rhinoceros,B
+Which of these is not a branch of mathematics?,Algebra,Geometry,Trigonometry,Geology,D
+The instrument used to see distant objects is:,Microscope,Telescope,Periscope,Kaleidoscope,B
+Which of these is not a type of rock?,Igneous,Sedimentary,Metamorphic,Liquid,D
+The national fruit of India is:,Apple,Mango,Banana,Orange,B
+Which of these is not a sense organ?,Eyes,Ears,Skin,Brain,D
+The chemical symbol for potassium is:,Pt,Po,K,Ka,C
+Which of these is not a component of the solar system?,Sun,Planets,Asteroids,Galaxy,D
+The national tree of India is:,Banyan,Neem,Peepal,Mango,A
+Which of these is not a type of computer memory?,RAM,ROM,CPU,Cache,C
+The chemical symbol for silver is:,Si,Sv,Ag,Sl,C
+Which of these is not a type of cloud?,Cumulus,Stratus,Nimbus,Radius,D
+The national song of India is:,Jana Gana Mana,Vande Mataram,Sare Jahan Se Accha,National Anthem,B
+Which of these is not a type of triangle?,Equilateral,Isosceles,Scalene,Rectangular,D
+The chemical symbol for lead is:,Le,Ld,Pb,Pl,C
+Which of these is not a type of soil?,Sandy,Clayey,Loamy,Stony,D
+The national aquatic animal of India is:,Dolphin,Shark,Ganges River Dolphin,Whale,C
+Which of these is not a type of force?,Gravity,Friction,Magnetism,Density,D
+The chemical symbol for mercury is:,Me,Mr,Hg,Mg,C
+Which of these is not a type of energy?,Kinetic,Potential,Mechanical,Volume,D
+The national calendar of India is based on:,Gregorian calendar,Saka calendar,Vikram Samvat,Hijri calendar,B
+Which of these is not a type of pollution?,Air,Water,Noise,Mineral,D
+The chemical symbol for carbon is:,Ca,Cb,C,Co,C
+Which of these is not a type of lens?,Convex,Concave,Plano-convex,Rectangular,D
+The national currency of India is:,Dollar,Rupee,Yen,Euro,B
+Which of these is not a type of angle?,Acute,Obtuse,Right,Parallel,D
+The chemical symbol for nitrogen is:,Ni,Ne,N,No,C
+Which of these is not a type of animal tissue?,Epithelial,Connective,Muscular,Woody,D
+The national emblem of India is adapted from:,Mahabodhi Temple,Konark Temple,Sanchi Stupa,Ashoka Pillar,D
+Which of these is not a type of plant tissue?,Meristematic,Permanent,Complex,Metallic,D
+The chemical symbol for calcium is:,Cl,Ca,Cm,Cu,B
+Which of these is not a type of computer network?,LAN,WAN,MAN,PAN,D
+The national game of India is:,Cricket,Hockey,Football,Chess,B
+Which of these is not a type of chemical reaction?,Combination,Decomposition,Displacement,Construction,D
+The chemical symbol for oxygen is:,Ox,Oy,O,Oz,C
+Which of these is not a type of mirror?,Plane,Concave,Convex,Rectangular,D
+The national river of India is:,Yamuna,Ganga,Godavari,Brahmaputra,B
+Which of these is not a type of computer virus?,Trojan,Worm,Spyware,Hardware,D
+The chemical symbol for helium is:,H,He,Hi,Ho,B
+Which of these is not a type of magnet?,Permanent,Temporary,Electromagnet,Wooden,D
+The national heritage animal of India is:,Lion,Tiger,Elephant,Rhinoceros,C
+Which of these is not a type of computer port?,USB,HDMI,VGA,CPU,D
+The chemical symbol for chlorine is:,Ch,Cl,Cn,Co,B
+Which of these is not a type of thermometer?,Clinical,Laboratory,Digital,Wooden,D
+The national vegetable of India is:,Potato,Tomato,Onion,Pumpkin,D
+Which of these is not a type of polygon?,Triangle,Quadrilateral,Pentagon,Circular,D
+The chemical symbol for sulfur is:,Su,Sl,S,So,C
+Which of these is not a type of computer storage?,Hard Disk,Pen Drive,Cloud,Keyboard,D
+The national reptile of India is:,Cobra,Python,King Cobra,Monitor Lizard,C
+Which of these is not a type of quadrilateral?,Square,Rectangle,Rhombus,Triangle,D
+The chemical symbol for phosphorus is:,Ph,Po,Ps,P,B
+Which of these is not a type of computer software?,System,Application,Utility,Hardware,D
+The national currency symbol of India is:,₹,$,€,¥,A

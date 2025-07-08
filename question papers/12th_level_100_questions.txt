@@ -1,0 +1,101 @@
+Text,OptionA,OptionB,OptionC,OptionD,CorrectOption
+Who is known as the 'Father of the Indian Constitution'?,Mahatma Gandhi,Jawaharlal Nehru,B.R. Ambedkar,Sardar Patel,C
+Which amendment of the Indian Constitution lowered the voting age from 21 to 18?,42nd Amendment,44th Amendment,61st Amendment,73rd Amendment,C
+The 'Doctrine of Lapse' was introduced by which British Governor-General?,Lord Dalhousie,Lord Cornwallis,Lord Wellesley,Lord Curzon,A
+Which battle marked the beginning of British rule in India?,Battle of Plassey,Battle of Buxar,Battle of Panipat,Battle of Haldighati,A
+Who authored the book 'Discovery of India'?,Rabindranath Tagore,Jawaharlal Nehru,Mahatma Gandhi,Subhas Chandra Bose,B
+The 'Quit India Movement' was launched in which year?,1940,1941,1942,1945,C
+Which of the following is not a Fundamental Right?,Right to Equality,Right to Property,Right to Freedom of Religion,Right to Education,B
+The 'Green Revolution' in India was primarily associated with which crop?,Rice,Wheat,Sugarcane,Cotton,B
+Who was the first woman Prime Minister of India?,Indira Gandhi,Sonia Gandhi,Pratibha Patil,Sarojini Naidu,A
+The 'Tashkent Agreement' was signed between India and which country?,China,Pakistan,Nepal,Bangladesh,B
+Which planet is known as the 'Red Planet'?,Venus,Mars,Jupiter,Saturn,B
+The process of converting light energy into chemical energy is called:,Respiration,Photosynthesis,Fermentation,Transpiration,B
+Which gas is responsible for the greenhouse effect?,Oxygen,Nitrogen,Carbon Dioxide,Hydrogen,C
+The SI unit of electric current is:,Ohm,Volt,Ampere,Watt,C
+Which of the following is a noble gas?,Oxygen,Nitrogen,Helium,Chlorine,C
+The largest gland in the human body is:,Pancreas,Liver,Kidney,Stomach,B
+Which vitamin is also known as ascorbic acid?,Vitamin A,Vitamin B,Vitamin C,Vitamin D,C
+The study of earthquakes is called:,Geology,Seismology,Meteorology,Volcanology,B
+Which of the following is not a natural polymer?,Rubber,Silk,Polyethylene,Wool,C
+The chemical symbol for gold is:,Ag,Au,Fe,Hg,B
+The 'Dandi March' was associated with which movement?,Non-Cooperation Movement,Civil Disobedience Movement,Quit India Movement,Swadeshi Movement,B
+Who was the first President of India?,Rajendra Prasad,Sarvepalli Radhakrishnan,Zakir Hussain,V.V. Giri,A
+The 'Poona Pact' was signed between Mahatma Gandhi and:,Jawaharlal Nehru,B.R. Ambedkar,Subhas Chandra Bose,Muhammad Ali Jinnah,B
+The 'Simon Commission' was boycotted because:,It was all-British,It was all-Indian,It included no women,It was appointed too late,A
+The 'Battle of Plassey' was fought in which year?,1757,1764,1857,1942,A
+Which of the following is not a classical dance form of India?,Bharatanatyam,Kathakali,Kuchipudi,Bhangra,D
+The 'Mughal Gardens' are located in which Indian city?,Delhi,Agra,Jaipur,Hyderabad,A
+The 'Kalinga War' was fought by which emperor?,Ashoka,Chandragupta Maurya,Harsha,Akbar,A
+The 'Jallianwala Bagh Massacre' occurred in which city?,Amritsar,Lahore,Delhi,Kolkata,A
+The 'Indian National Army' (INA) was founded by:,Subhas Chandra Bose,Bhagat Singh,Chandrashekhar Azad,Lala Lajpat Rai,A
+Which of the following is the longest river in the world?,Nile,Amazon,Yangtze,Mississippi,A
+The 'Sundarbans' delta is formed by which rivers?,Ganga and Brahmaputra,Godavari and Krishna,Yamuna and Ganga,Narmada and Tapti,A
+Which of the following is not a type of rock?,Igneous,Sedimentary,Metamorphic,Liquid,D
+The 'Ring of Fire' is associated with:,Earthquakes and Volcanoes,Hurricanes,Tornadoes,Floods,A
+The 'Great Barrier Reef' is located off the coast of which country?,USA,Australia,Brazil,South Africa,B
+The 'Equator' passes through which of the following countries?,India,Brazil,China,Russia,B
+Which of the following is the largest desert in the world?,Sahara Desert,Gobi Desert,Thar Desert,Atacama Desert,A
+The 'Tropic of Cancer' does not pass through which Indian state?,Madhya Pradesh,Gujarat,Rajasthan,Kerala,D
+The 'Palk Strait' separates India from which country?,Pakistan,Sri Lanka,Bangladesh,Nepal,B
+The 'Himalayas' are formed due to the collision of which tectonic plates?,Indo-Australian and Eurasian,African and Eurasian,Pacific and North American,South American and Nazca,A
+Who wrote the novel 'God of Small Things'?,Arundhati Roy,Jhumpa Lahiri,Salman Rushdie,Vikram Seth,A
+The 'Mahabharata' was originally written in which language?,Sanskrit,Pali,Prakrit,Tamil,A
+Who is known as the 'Bard of Avon'?,John Milton,William Shakespeare,Charles Dickens,Geoffrey Chaucer,B
+The 'Gitanjali' was written by:,Rabindranath Tagore,Bankim Chandra Chattopadhyay,Sarat Chandra Chattopadhyay,Michael Madhusudan Dutt,A
+Which of the following is not a work of Kalidasa?,Meghdoot,Abhijnanasakuntalam,Raghuvamsa,Arthashastra,D
+The 'Ramcharitmanas' was written by:,Tulsidas,Kabir,Surdas,Valmiki,A
+Who wrote the play 'Romeo and Juliet'?,George Bernard Shaw,Oscar Wilde,William Shakespeare,Christopher Marlowe,C
+The 'Autobiography of an Unknown Indian' was written by:,Nirad C. Chaudhuri,R.K. Narayan,Mulk Raj Anand,Raja Rao,A
+The 'Divine Comedy' was written by:,Dante Alighieri,Giovanni Boccaccio,Petrarch,John Milton,A
+Who is the author of 'The Interpretation of Dreams'?,Sigmund Freud,Carl Jung,Friedrich Nietzsche,Karl Marx,A
+The 'Right to Information Act' was enacted in which year?,2002,2005,2007,2010,B
+The 'National Green Tribunal' was established in which year?,2008,2010,2012,2015,B
+The 'Goods and Services Tax' (GST) was implemented in India in:,2015,2016,2017,2018,C
+The 'Make in India' initiative was launched by which Prime Minister?,Manmohan Singh,Narendra Modi,Atal Bihari Vajpayee,I.K. Gujral,B
+The 'Pradhan Mantri Jan Dhan Yojana' is related to:,Healthcare,Education,Financial Inclusion,Rural Development,C
+The 'Swachh Bharat Abhiyan' was launched on which date?,15th August,2nd October,26th January,14th November,B
+The 'National Food Security Act' was passed in which year?,2010,2011,2012,2013,D
+The 'Aadhaar Card' is issued by which authority?,Election Commission,UIDAI,RBI,SEBI,B
+The 'Digital India' campaign aims to:,Promote cashless transactions,Provide digital infrastructure,Increase internet speed,All of the above,D
+The 'Atal Pension Yojana' is targeted towards:,Children,Women,Senior Citizens,Unorganized Sector Workers,D
+The 'Doppler Effect' is related to:,Light,Sound,Both light and sound,Neither light nor sound,C
+The 'Heisenberg Uncertainty Principle' is associated with:,Thermodynamics,Quantum Mechanics,Relativity,Electromagnetism,B
+The 'Pauli Exclusion Principle' states that:,No two electrons can have the same set of quantum numbers,Energy is quantized,Light has dual nature,Opposite charges attract,A
+The 'Hertzsprung-Russell Diagram' is used to classify:,Stars,Galaxies,Planets,Comets,A
+The 'Big Bang Theory' explains the origin of:,Earth,Solar System,Universe,Galaxies,C
+The 'Schrodinger's Cat' thought experiment is related to:,Relativity,Quantum Superposition,Thermodynamics,Electromagnetism,B
+The 'Higgs Boson' is often called the:,God Particle,Atom Smasher,Black Hole,Neutron Star,A
+The 'Photoelectric Effect' was explained by:,Max Planck,Albert Einstein,Niels Bohr,Erwin Schrodinger,B
+The 'Double Helix' structure is associated with:,DNA,RNA,Proteins,Carbohydrates,A
+The 'Human Genome Project' was completed in:,1990,2000,2003,2010,C
+The 'Montreal Protocol' is related to the protection of:,Ozone Layer,Biodiversity,Climate Change,Endangered Species,A
+The 'Kyoto Protocol' is associated with:,Nuclear Disarmament,Greenhouse Gas Emissions,Ocean Pollution,Deforestation,B
+The 'Paris Agreement' aims to limit global temperature rise to:,1.5°C,2°C,3°C,4°C,B
+The 'Chernobyl Disaster' occurred in which country?,USA,Russia,Ukraine,Japan,C
+The 'Red Data Book' contains information about:,Endangered Species,Invasive Species,Medicinal Plants,Fossil Fuels,A
+The 'Project Tiger' was launched in which year?,1971,1973,1975,1980,B
+The 'Chipko Movement' was started to protect:,Forests,Rivers,Wildlife,Farmlands,A
+The 'Silent Valley' is located in which Indian state?,Kerala,Karnataka,Tamil Nadu,Andhra Pradesh,A
+The 'Sunderbans' is a natural habitat of:,Lion,Tiger,Elephant,Rhinoceros,B
+The 'Narmada Bachao Andolan' was led by:,Medha Patkar,Aruna Roy,Vandana Shiva,Arundhati Roy,A
+The 'Indian Space Research Organisation' (ISRO) was founded in:,1969,1972,1975,1980,A
+The first Indian satellite 'Aryabhata' was launched in:,1975,1980,1984,1990,A
+The 'Mangalyaan Mission' was launched to study:,Moon,Mars,Jupiter,Venus,B
+The 'Chandrayaan-1' mission was launched in:,2003,2005,2008,2010,C
+The 'Gaganyaan Mission' aims to send humans to:,Moon,Mars,Space (Low Earth Orbit),International Space Station,C
+The 'Satish Dhawan Space Centre' is located in:,Andhra Pradesh,Kerala,Tamil Nadu,Karnataka,A
+The 'Vikram Sarabhai Space Centre' is located in:,Thiruvananthapuram,Bangalore,Hyderabad,Chennai,A
+The 'Polar Satellite Launch Vehicle' (PSLV) is used to launch:,Communication Satellites,Weather Satellites,Remote Sensing Satellites,All of the above,D
+The first Indian to travel to space was:,Kalpana Chawla,Rakesh Sharma,Sunita Williams,Ravish Malhotra,B
+The 'Indian Regional Navigation Satellite System' is called:,NAVIC,GAGAN,GSAT,INSAT,A
+The 'World Health Organisation' (WHO) was established in:,1945,1948,1950,1952,B
+The 'United Nations' was established in:,1945,1948,1950,1952,A
+The 'International Monetary Fund' (IMF) was established in:,1944,1945,1947,1950,A
+The 'World Trade Organisation' (WTO) was established in:,1990,1995,2000,2005,B
+The 'Non-Aligned Movement' (NAM) was founded by:,Jawaharlal Nehru,Sukarno,Tito,All of the above,D
+The 'SAARC' was established in:,1980,1985,1990,1995,B
+The 'BRICS' grouping includes which of the following countries?,Brazil, Russia, India, China, South Africa,All of the above,None of the above,Only India and China,A
+The 'G20' summit is a meeting of:,20 richest countries,20 most populous countries,20 major economies,20 largest countries,C
+The 'United Nations Security Council' has how many permanent members?,5,7,10,15,A
+The 'Universal Declaration of Human Rights' was adopted in:,1945,1948,1950,1952,B

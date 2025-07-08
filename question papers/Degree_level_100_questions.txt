@@ -1,0 +1,101 @@
+Text,OptionA,OptionB,OptionC,OptionD,CorrectOption
+Which article of the Indian Constitution deals with the President's power to grant pardons?,Article 72,Article 74,Article 76,Article 78,A
+The 'Hague Convention' is primarily concerned with:,Maritime Law,Private International Law,Space Law,Human Rights Law,B
+Who chairs the GST Council in India?,RBI Governor,Finance Minister,Prime Minister,Chief Economic Advisor,B
+The 'Bombay Plan' of 1944 was related to:,Industrialization,Agricultural Reforms,Education System,Constitutional Reforms,A
+'Operation Flood' is associated with which sector?,Oil Production,Dairy Development,Space Research,Defense Manufacturing,B
+The 'Kaleshwaram Lift Irrigation Project' is located in:,Andhra Pradesh,Telangana,Karnataka,Tamil Nadu,B
+Which constitutional amendment introduced the Anti-Defection Law?,52nd,61st,73rd,91st,A
+The 'Miyawaki Method' is associated with:,Water Conservation,Urban Afforestation,Waste Management,Organic Farming,B
+'Project NETRA' is an initiative of:,ISRO,DRDO,CSIR,ICMR,A
+The 'VVPAT' system was first used in India in which election year?,2014,2017,2019,2020,B
+The 'Financial Action Task Force (FATF)' was established by:,G7,G20,UN Security Council,World Bank,A
+Which Indian state has the largest legislative assembly?,Uttar Pradesh,Madhya Pradesh,West Bengal,Maharashtra,A
+The 'Pocso Act' deals with:,Cyber Crimes,Child Sexual Abuse,Domestic Violence,Environmental Protection,B
+'Mission Indradhanush' is related to:,Vaccination,Digital Literacy,Skill Development,Rural Housing,A
+The 'Sovereign Gold Bond Scheme' is issued by:,SEBI,RBI,Ministry of Finance,NDTL,B
+Which Indian city hosts the headquarters of the 'International Solar Alliance'?,New Delhi,Bengaluru,Gurugram,Hyderabad,A
+The 'Kigali Amendment' deals with:,Plastic Pollution,Ozone Depleting Substances,E-Waste,Marine Pollution,B
+The 'Basel Convention' primarily regulates:,Nuclear Waste,Hazardous Waste,E-Waste,Biomedical Waste,B
+Which Indian state implemented the 'Ease of Doing Business' initiative first?,Gujarat,Maharashtra,Tamil Nadu,Andhra Pradesh,D
+The 'Stand-Up India Scheme' promotes entrepreneurship among:,SC/ST Communities,Women,All of the above,None of the above,C
+The 'Vijay Kelkar Committee' was related to:,Tax Reforms,Education Reforms,Defense Reforms,Agricultural Reforms,A
+Which constitutional body advises the President on matters related to Scheduled Castes?,NCSC,NCST,NHRC,Finance Commission,A
+The 'MGNREGA' guarantees how many days of employment per household?,100,120,150,200,A
+The 'JAM Trinity' refers to:,Jan Dhan-Aadhaar-Mobile,Jan Dhan-Agriculture-Market,Jan Dhan-Agriculture-Mobile,Jan Dhan-Agriculture-Manufacturing,A
+The 'Pradhan Mantri MUDRA Yojana' provides loans up to:,5 lakh,10 lakh,15 lakh,20 lakh,B
+The 'Ramsar Convention' is associated with:,Desertification,Wetlands,Forests,Marine Life,B
+The 'Global Hunger Index' is published by:,WHO,UNDP,IFPRI,World Bank,C
+The 'Bimal Jalan Committee' was related to:,Banking Reforms,Economic Capital Framework,Agricultural Marketing,Taxation,B
+The 'Kasturirangan Committee' report is related to:,Education Reforms,Environmental Protection,Space Technology,Health Infrastructure,B
+The 'Hindustan Socialist Republican Association' was founded by:,Bhagat Singh,Subhas Chandra Bose,Chandrashekhar Azad,Lala Lajpat Rai,A
+The 'Doctrine of Basic Structure' was propounded in which case?,Golaknath Case,Kesavananda Bharati Case,Minerva Mills Case,S.R. Bommai Case,B
+The 'NITI Aayog' replaced which organization?,Planning Commission,Finance Commission,UPSC,NDC,A
+The 'Sarkaria Commission' was related to:,Centre-State Relations,Electoral Reforms,Judicial Reforms,Administrative Reforms,A
+The 'TRAI' was established in which year?,1995,1997,1999,2001,B
+The 'National Green Tribunal' was established under which act?,Environment Protection Act,Wildlife Protection Act,Forest Conservation Act,National Green Tribunal Act,D
+The 'Malimath Committee' recommended reforms in:,Criminal Justice System,Education System,Taxation System,Healthcare System,A
+The 'Shome Committee' was related to:,Taxation,Agriculture,Defense,Education,A
+The 'Lokpal and Lokayuktas Act' was passed in which year?,2011,2013,2015,2017,B
+The 'Pradhan Mantri Ujjwala Yojana' provides:,Electricity Connections,LPG Connections,Housing,Healthcare,B
+The 'National Pension System (NPS)' is regulated by:,SEBI,PFRDA,RBI,IRDAI,B
+The 'Gandhi Peace Prize' for 2020 was awarded to:,Sheikh Hasina,Greta Thunberg,UNHCR,None of the above,D
+The 'Ashok Mehta Committee' was related to:,Panchayati Raj,Education,Healthcare,Defense,A
+The 'National Commission for Women' was established in:,1990,1992,1995,1997,B
+The 'Srikrishna Committee' was related to:,State Reorganization,Financial Inclusion,Data Protection,Judicial Reforms,C
+The 'Pradhan Mantri Awas Yojana (Urban)' targets completion by:,2020,2022,2024,2025,B
+The 'Swachh Bharat Mission (Gramin)' aims to achieve:,Open Defecation Free India,Solid Waste Management,Liquid Waste Management,All of the above,D
+The 'National Health Mission' subsumed which two missions?,NRHM & NUHM,NRHM & AYUSH,NUHM & AYUSH,None of the above,A
+The 'Pradhan Mantri Kisan Samman Nidhi' provides annual financial assistance of:,2000,4000,6000,8000,C
+The 'Standing Committee on Economic Statistics' was formed in:,2018,2019,2020,2021,B
+The 'National Statistical Commission' was established in:,2003,2005,2007,2010,B
+The 'Global Competitiveness Report' is published by:,IMF,World Bank,WEF,UNDP,C
+The 'Ease of Living Index' is released by:,NITI Aayog,Ministry of Housing,Ministry of Statistics,Ministry of Commerce,B
+The 'Human Development Index' is published by:,WHO,UNDP,World Bank,IMF,B
+The 'Global Innovation Index' is released by:,WIPO,WTO,World Bank,UNDP,A
+The 'World Happiness Report' is published by:,UNSD,UNDP,WEF,None of the above,A
+The 'Multidimensional Poverty Index' is published by:,UNDP,World Bank,IMF,WEF,A
+The 'Global Gender Gap Report' is published by:,UN Women,WEF,UNDP,World Bank,B
+The 'Corruption Perceptions Index' is published by:,Transparency International,World Bank,UNODC,WEF,A
+The 'Press Freedom Index' is published by:,UNESCO,Reporters Without Borders,Committee to Protect Journalists,International Press Institute,B
+The 'Environmental Performance Index' is published by:,UNEP,WEF,Yale University,Greenpeace,C
+The 'Indian Ocean Rim Association (IORA)' has how many member states?,21,23,25,27,A
+The 'Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation (BIMSTEC)' has how many members?,5,7,9,11,B
+The 'Shanghai Cooperation Organization (SCO)' was founded in:,1996,2001,2005,2010,B
+The 'Asia-Pacific Economic Cooperation (APEC)' has how many member economies?,15,21,27,31,B
+The 'Gulf Cooperation Council (GCC)' was established in:,1981,1985,1990,1995,A
+The 'African Union (AU)' was established in:,2000,2002,2005,2010,B
+The 'Organization of Islamic Cooperation (OIC)' has its headquarters in:,Riyadh,Jeddah,Kuwait City,Abu Dhabi,B
+The 'Arctic Council' has how many member states?,6,8,10,12,B
+The 'Commonwealth of Nations' has how many member countries?,53,56,59,62,A
+The 'Organization of Petroleum Exporting Countries (OPEC)' was founded in:,1960,1965,1970,1975,A
+The 'Indian Space Research Organisation (ISRO)' was founded in:,1969,1972,1975,1980,A
+The 'Chandrayaan-2' mission was launched in:,2017,2018,2019,2020,C
+The 'Gaganyaan' mission aims to send astronauts to space by:,2022,2023,2024,2025,D
+The 'NavIC' system consists of how many satellites?,5,7,9,11,B
+The 'GSAT-7A' is a satellite dedicated to:,Communication,Earth Observation,Navigation,Military,A
+The 'PSLV-C48' mission carried which satellite?,RISAT-2BR1,Cartosat-3,GSAT-30,EMISAT,D
+The 'Astrosat' is India's first dedicated:,Communication Satellite,Military Satellite,Astronomy Satellite,Navigation Satellite,C
+The 'Human Space Flight Centre (HSFC)' is located in:,Bengaluru,Ahmedabad,Thiruvananthapuram,Hyderabad,A
+The 'Vikram Sarabhai Space Centre (VSSC)' is located in:,Thiruvananthapuram,Bengaluru,Ahmedabad,Hyderabad,A
+The 'Satish Dhawan Space Centre (SDSC)' is located in:,Sriharikota,Thumba,Balasore,Port Blair,A
+The 'National Institutional Ranking Framework (NIRF)' was launched in:,2015,2016,2017,2018,A
+The 'Institutions of Eminence (IoE)' scheme was launched in:,2017,2018,2019,2020,B
+The 'SWAYAM' platform was launched in:,2015,2016,2017,2018,C
+The 'National Education Policy (NEP) 2020' proposes a new curricular structure of:,3+3+4,4+3+3,5+3+3+4,5+4+3,C
+The 'Higher Education Financing Agency (HEFA)' was established in:,2015,2016,2017,2018,C
+The 'Unnat Bharat Abhiyan' aims to connect:,Schools with Universities,Villages with Universities,Industries with Universities,None of the above,B
+The 'Global Initiative of Academic Networks (GIAN)' was launched in:,2014,2015,2016,2017,B
+The 'IMPacting Research INnovation and Technology (IMPRINT)' was launched in:,2014,2015,2016,2017,B
+The 'Prime Minister's Research Fellows (PMRF)' scheme was launched in:,2017,2018,2019,2020,B
+The 'Study in India' program was launched in:,2017,2018,2019,2020,B
+The 'National Sports University' is located in:,Imphal,Patiala,Bangalore,Hyderabad,A
+The 'Khelo India University Games' were first held in:,2018,2019,2020,2021,C
+The 'Target Olympic Podium Scheme (TOPS)' was launched in:,2014,2015,2016,2017,A
+The 'National Dope Testing Laboratory' is located in:,New Delhi,Mumbai,Bangalore,Hyderabad,A
+The 'Sports Authority of India (SAI)' was established in:,1982,1984,1987,1990,B
+The 'Fit India Movement' was launched in:,2018,2019,2020,2021,B
+The 'National Anti-Doping Agency (NADA)' was established in:,2005,2007,2009,2011,C
+The 'Khelo India Youth Games' were first held in:,2016,2017,2018,2019,C
+The 'Arjuna Award' was instituted in:,1961,1965,1969,1971,A
+The 'Dronacharya Award' is given for:,Sports Journalism,Sports Coaching,Sports Medicine,Sports Administration,B
