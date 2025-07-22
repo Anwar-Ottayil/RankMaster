@@ -10,14 +10,14 @@ namespace Domain.Models
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public DateTime ScheduledDate { get; set; }
-        public string Description { get; set; }
+        public string Description { get; set; } = null; 
+        public bool IsPaid  { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public Category Category { get; set; }
         public ICollection<Question>Questions { get; set; }
         public int? CategoryId { get; set; }
- 
 
+        public ICollection<ExamQuestion> ExamQuestions { get; set; }
     }
 
 

@@ -3,6 +3,7 @@ using Application.Interfaces.ServiceInterface;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace RankMaster.Controllers
 {
@@ -32,7 +33,7 @@ namespace RankMaster.Controllers
             return Ok(exam);
         }
 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
 
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] List<ExamDto> examDtos)
@@ -59,5 +60,31 @@ namespace RankMaster.Controllers
             await _examService.DeleteExamAsync(id);
             return Ok("Exam deleted");
         }
+        [HttpGet("paginated")]
+        public async Task<IActionResult> GetPaginated([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
+        {
+            var result = await _examService.GetPaginatedExamsAsync(pageNumber, pageSize);
+            return Ok(result);
+        }
+
+
+        [HttpPost("create")]
+        public async Task<IActionResult> CreateExam([FromBody] CreateExamRequestDto dto)
+        {
+            try
+            {
+                var examId = await _examService.CreateExamAsync(dto);
+                return Ok(new { ExamId = examId, Message = "Exam created successfully." });
+            }
+            catch (DbUpdateException ex)
+            {
+                return StatusCode(500, $"Database Update Error: {ex.InnerException?.Message ?? ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
+        }
+
     }
 }

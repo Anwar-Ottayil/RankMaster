@@ -14,5 +14,8 @@ namespace Application.Interfaces.RepositoryInterface
         Task<User> GetByIdAsync(int id);
         Task UpdateRoleAsync(int userId, string role);
         Task<User> GetByEmailAsync(string email);
+        Task<IEnumerable<User>> GetAllAsync();
+        Task DeleteAsync(User user);
+        Task SaveChangesAsync();
     }
 }

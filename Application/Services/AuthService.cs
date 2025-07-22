@@ -34,9 +34,10 @@ namespace Application.Services
 
             try
             {
-               
 
-                var exist = (await _repository.GetAllAsync()).FirstOrDefault(e => e.Email.ToLower() == register.Email.ToLower());
+
+
+                var exist = (await _repository.GetAllAsync()).FirstOrDefault(e => e.Email.ToLower().Trim() == register.Email.ToLower());
                 if (exist != null) return new ApiResponseDto<AuthResponseDto>(400, "User already exist");
 
                 var mapped = _mapper.Map<User>(register);
@@ -47,12 +48,12 @@ namespace Application.Services
                 await _repository.AddAsync(mapped);
                 return new ApiResponseDto<AuthResponseDto>(200, "User Registered successfully");
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
-                return new ApiResponseDto<AuthResponseDto>(500, "something went wrong"+ex.Message);
+                return new ApiResponseDto<AuthResponseDto>(500, "something went wrong" + ex.Message);
             }
 
-            
+
 
         }
         public async Task<ApiResponseDto<AuthResponseDto>> Login(LoginDto login)
@@ -103,6 +104,8 @@ namespace Application.Services
                 signingCredentials: creds);
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
+        
     }
 }
     

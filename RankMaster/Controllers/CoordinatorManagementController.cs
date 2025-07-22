@@ -8,7 +8,7 @@ namespace RankMaster.Controllers
 {
     [ApiController]
     [Route("api/admin/coordinators")]
-    //[Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     public class CoordinatorManagementController : ControllerBase
     {
         private readonly ICoordinatorManagementService _service;

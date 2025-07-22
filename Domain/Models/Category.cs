@@ -14,9 +14,8 @@ namespace Domain.Models
         public string Name { get; set; } = string.Empty;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public ICollection<Exam> Exams { get; set; }
-        public ICollection<Category>categories { get; set; }    
 
-        
+       
 
     }
 }

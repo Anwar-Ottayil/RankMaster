@@ -17,6 +17,7 @@ namespace Domain.Models
 
 
         public ICollection<CoordinatorCategory> CoordinatorCategories { get; set; }
+        public ICollection<ExamAttempt> ExamAttempts { get; set; }
 
 
     }

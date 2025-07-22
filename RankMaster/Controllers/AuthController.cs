@@ -7,10 +7,10 @@ namespace RankMaster.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class AuthController : ControllerBase
     {
         private readonly IAuthService _userService;
-        public UserController(IAuthService userService)
+        public AuthController(IAuthService userService)
         {
             _userService = userService;
         }
@@ -43,8 +43,8 @@ namespace RankMaster.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromForm]LoginDto login)
         {
-            //try
-            //{
+            try
+            {
                 var result = await _userService.Login(login);
                 if (result.StatusCode == 200)
                 {
@@ -62,12 +62,12 @@ namespace RankMaster.Controllers
                 {
                     return BadRequest(result);
                 }
-                    
-            //}
-            //catch (Exception ex)
-            //{
-            //    return Unauthorized(new ApiResponseDto<string>(401, ex.Message, null));
-            //}
+
         }
+            catch (Exception ex)
+            {
+                return Unauthorized(new ApiResponseDto<string>(401, ex.Message, null));
+            }
+}
     }
 }

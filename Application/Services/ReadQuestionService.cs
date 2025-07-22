@@ -21,6 +21,16 @@ namespace Application.Services
             _mapper = mapper;
         }
 
+        public async Task<List<ReadQuestionDto>> GetAllQuestionsByExamAsync(int examId)
+        {
+            var activeQuestions = await _repository.GetQuestionsByExamIdAsync(examId);
+            var removedQuestions = await _repository.GetRemovedQuestionsByExamIdAsync(examId);
+
+            var activeDtos = _mapper.Map<List<ReadQuestionDto>>(activeQuestions);
+            var removedDtos = _mapper.Map<List<ReadQuestionDto>>(removedQuestions);
+
+            return activeDtos.Concat(removedDtos).ToList();
+        }
         public async Task<List<QuestionDto>> GetQuestionsByCategoryAndExamAsync(int categoryId, int examId)
         {
             var questions = await _repository.GetQuestionsByCategoryAndExamAsync(categoryId, examId);
@@ -28,3 +38,21 @@ namespace Application.Services
         }
     }
 }
+//public class ReadQuestionService : IReadQuestionService
+//{
+//    private readonly IReadQuestionRepository _repository;
+//    private readonly IMapper _mapper;
+
+//    public ReadQuestionService(IReadQuestionRepository repository, IMapper mapper)
+//    {
+//        _repository = repository;
+//        _mapper = mapper;
+//    }
+
+//    public async Task<List<QuestionDto>> GetQuestionsByCategoryAndExamAsync(int categoryId, int examId)
+//    {
+//        var questions = await _repository.GetQuestionsByCategoryAndExamAsync(categoryId, examId);
+//        return _mapper.Map<List<QuestionDto>>(questions);
+//    }
+//}
+//}

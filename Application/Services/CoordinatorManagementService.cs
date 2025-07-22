@@ -2,6 +2,7 @@
 using Application.Interfaces.RepositoryInterface;
 using Application.Interfaces.ServiceInterface;
 using Domain.Models;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +25,7 @@ namespace Application.Services
         public async Task RegisterCoordinatorAsync(CreateCoordinatorDto dto)
         {
             // Check if user already exists
-            var existing = await _userRepo.GetByEmailAsync(dto.Email);
+            var existing = await _userRepo.GetByEmailAsync(dto.Email.Trim());
             if (existing != null)
                 throw new Exception("User with this email already exists");
 
@@ -32,10 +33,11 @@ namespace Application.Services
             {
                 Name = dto.Name,
                 Email = dto.Email,
-                Password = dto.Password, // hash in real scenarios
+                Password = dto.Password ,// hash in real scenarios
                 Role = "Coordinator"
             };
-
+            var hasher = new PasswordHasher<User>();
+            newUser.Password = hasher.HashPassword(newUser, dto.Password.Trim());
             await _userRepo.AddUserAsync(newUser);
 
             await _categoryRepo.AssignCategoriesAsync(newUser.Id, dto.CategoryIds);

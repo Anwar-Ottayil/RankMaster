@@ -17,5 +17,11 @@ namespace Application.Interfaces.ServiceInterface
         Task UpdateExamAsync(int id, ExamDto examDto);
         Task DeleteExamAsync(int id);
 
+        Task<PagedResultDto<ExamDto>> GetPaginatedExamsAsync(int pageNumber, int pageSize);
+
+        Task<int> CreateExamAsync(CreateExamRequestDto dto);
+
+
+
     }
 }

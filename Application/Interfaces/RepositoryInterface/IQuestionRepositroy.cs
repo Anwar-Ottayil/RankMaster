@@ -24,6 +24,7 @@ namespace Application.Interfaces.RepositoryInterface
         Task<List<Question>> GetQuestionsByExamIdAsync(int examId);
         Task AddQuestionsAsync(List<Question> questions);
         Task AddRemovedQuestionsAsync(List<RemovedQuestion> removedQuestions);
+        Task<Question> GetByIdAsync(int id);
     }
 
 }

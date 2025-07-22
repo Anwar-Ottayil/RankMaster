@@ -45,9 +45,12 @@ namespace Infrastructure.Repository
             _context = context;
         }
 
-      
-
-
+        public async Task<Question> GetByIdAsync(int id)
+        {
+            return await _context.Questions
+                .Include(q => q.Exam) // optional: if you need exam info
+                .FirstOrDefaultAsync(q => q.Id == id);
+        }
 
         public async Task<List<Question>> GetQuestionsByExamIdAsync(int examId)
         {

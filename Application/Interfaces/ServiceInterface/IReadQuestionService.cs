@@ -10,5 +10,9 @@ namespace Application.Interfaces.ServiceInterface
     public interface IReadQuestionService
     {
         Task<List<QuestionDto>> GetQuestionsByCategoryAndExamAsync(int categoryId, int examId);
+
+
+        Task<List<ReadQuestionDto>> GetAllQuestionsByExamAsync(int examId);
+        //Task GetQuestionsByCategoryAndExamAsync(int categoryId, int examId);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Application.Interfaces.RepositoryInterface;
+using Domain.Models;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -48,10 +49,32 @@ namespace Infrastructure.Repository
             _dbset.Remove(entity);
             await _context.SaveChangesAsync();
         }
+
         //public async Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate)
         //{
         //    return await _dbset.Where(predicate).ToListAsync();
         //}
-      
+
+
+
+
+        public async Task<Exam> AddExamAsync(Exam exam)
+        {
+            _context.Exams.Add(exam);
+            await _context.SaveChangesAsync();
+            return exam;
+        }
+
+        public async Task AddExamQuestionsAsync(IEnumerable<ExamQuestion> examQuestions)
+        {
+            _context.ExamQuestions.AddRange(examQuestions);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task SaveChangesAsync()
+        {
+            await _context.SaveChangesAsync();
+        }
+
     }
 }

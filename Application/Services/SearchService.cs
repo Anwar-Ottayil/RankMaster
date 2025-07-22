@@ -29,7 +29,6 @@ namespace Application.Services
                 Id = e.Id,
                 Title = e.Title,
                 Description = e.Description,
-                ScheduledDate = e.ScheduledDate,
                 CategoryName = e.Category?.Name ?? ""
             }).ToList();
         }

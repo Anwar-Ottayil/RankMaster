@@ -17,11 +17,14 @@ namespace Domain.Models
         public string OptionC { get; set; }
         public string OptionD { get; set; }
         public string CorrectOption { get; set; }
-
         public int? CategoryId { get; set; }
         public Category Category { get; set; }
         public int ExamId { get; set; }
         public Exam Exam { get; set; }
+
+
+
+        public ICollection<ExamQuestion> ExamQuestions { get; set; }
     }
 
   

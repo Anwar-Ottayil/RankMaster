@@ -10,6 +10,8 @@ namespace Application.Interfaces.RepositoryInterface
     public interface IReadQuestionRepository
     {
         Task<List<Question>> GetQuestionsByCategoryAndExamAsync(int categoryId, int examId);
+        Task<List<Question>> GetQuestionsByExamIdAsync(int examId);
+        Task<List<RemovedQuestion>> GetRemovedQuestionsByExamIdAsync(int examId);
 
     }
 }

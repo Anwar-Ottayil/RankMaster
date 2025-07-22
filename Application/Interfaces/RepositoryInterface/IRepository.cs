@@ -20,5 +20,11 @@ namespace Application.Interfaces.RepositoryInterface
 
         //Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate);
 
+
+
+        Task<Exam> AddExamAsync(Exam exam);
+        Task AddExamQuestionsAsync(IEnumerable<ExamQuestion> examQuestions);
+        Task SaveChangesAsync();
+
     }
 }

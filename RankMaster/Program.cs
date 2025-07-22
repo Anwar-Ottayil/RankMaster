@@ -1,51 +1,74 @@
+using Application.Interface.RepositoryInterface;
+using Application.Interface.ServiceInterface;
+using Application.Interfaces.NotificationInterface;
 using Application.Interfaces.RepositoryInterface;
 using Application.Interfaces.ServiceInterface;
 using Application.Mapper;
+using Application.Service;
 using Application.Services;
+using Domain.Models;
 using Infrastructure.Data;
 using Infrastructure.Repository;
+using Infrastructure.SignalR;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddDbContext<AppDbContext>(Options =>
-       Options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+// Add DbContext
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Register Repository & Services
-builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-builder.Services.AddScoped<IAuthService, AuthService>();
-builder.Services.AddScoped<IExamService, ExamService>();
-builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-builder.Services.AddScoped<ICategoryService, CategoryService>();
-builder.Services.AddScoped<CsvImportService>();
-builder.Services.AddScoped<IQuestionRepository, QuestionRepository>();
-builder.Services.AddScoped<IQuestionService, QuestionService>();
-builder.Services.AddScoped<ISearchRepository, SearchRepository>();
-builder.Services.AddScoped<ISearchService, SearchService>();
-
-
-builder.Services.AddScoped<ICoordinatorCategoryRepository, CoordinatorCategoryRepository>();
-
-builder.Services.AddScoped<ICoordinatorManagementService, CoordinatorManagementService>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-
-builder.Services.AddScoped<IReadQuestionRepository, ReadQuestionRepository>();
-builder.Services.AddScoped<IReadQuestionService, ReadQuestionService>();
+// Add AutoMapper
 builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
+// Add Repositories
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<IAnnouncementRepository, AnnouncementRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IQuestionRepository, QuestionRepository>();
+builder.Services.AddScoped<ISearchRepository, SearchRepository>();
+builder.Services.AddScoped<ICoordinatorCategoryRepository, CoordinatorCategoryRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IReadQuestionRepository, ReadQuestionRepository>();
+builder.Services.AddScoped<ICurrentAffairsRepository, CurrentAffairsRepository>();
+
+builder.Services.AddScoped<IExamScheduleRepository, ExamScheduleRepository>();
+builder.Services.AddScoped<IExamAttemptRepository, ExamAttemptRepository>();
 
 
+builder.Services.AddScoped<IExamRepository, ExamRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+// Add Services
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IExamService, ExamService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<CsvImportService>();
+builder.Services.AddScoped<IQuestionService, QuestionService>();
+builder.Services.AddScoped<ISearchService, SearchService>();
+builder.Services.AddScoped<ICoordinatorManagementService, CoordinatorManagementService>();
+builder.Services.AddScoped<IReadQuestionService, ReadQuestionService>();
+builder.Services.AddScoped<ICurrentAffairsService, CurrentAffairsService>();
+builder.Services.AddScoped<IExamScheduleService, ExamScheduleService>();
+builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
+builder.Services.AddScoped<INotificationService, NotificationService>();
+builder.Services.AddScoped<IExamAttemptService, ExamAttemptService>();
+builder.Services.AddScoped<IAnnouncementService, AnnouncementService>();
 
 
-// AutoMapper
-builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddScoped<IExamServiceIspaid, ExamServiceIspaid>();
+builder.Services.AddScoped<IUserService, UserService>();
 
-// JWT config
-builder.Services.AddAuthentication("Bearer")
-    .AddJwtBearer("Bearer", options =>
+// Add SignalR
+builder.Services.AddSignalR();
+
+// Add JWT Authentication
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
     {
         var key = builder.Configuration["Jwt:Key"];
         options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
@@ -57,20 +80,23 @@ builder.Services.AddAuthentication("Bearer")
         };
     });
 
-
-
+// Authorization Policies
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
     options.AddPolicy("User", policy => policy.RequireRole("User"));
-    //options.AddPolicy("Coordinator",policy=> policy.RequireRole("Coordinator"));
+    // options.AddPolicy("Coordinator", policy => policy.RequireRole("Coordinator"));
 });
+
+// Add Controllers
 builder.Services.AddControllers();
 
-
-builder.Services.AddSwaggerGen(options =>
+// Add Swagger
+builder.Services.AddSwaggerGen(c =>
 {
-    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "RankMaster API", Version = "v1" });
+
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
         Type = SecuritySchemeType.ApiKey,
@@ -80,8 +106,8 @@ builder.Services.AddSwaggerGen(options =>
         Description = "Please enter a valid JWT token"
     });
 
-    options.AddSecurityRequirement(new OpenApiSecurityRequirement
-            {
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
         {
             new OpenApiSecurityScheme
             {
@@ -91,21 +117,15 @@ builder.Services.AddSwaggerGen(options =>
                     Id = "Bearer"
                 }
             },
-            new string[] { }
+            new string[] {}
         }
-            });
+    });
 });
 
-
-
-builder.Services.AddControllers();
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "RankMaster API", Version = "v1" });
-});
-
+// Build app
 var app = builder.Build();
 
+// Configure middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -113,7 +133,12 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseAuthentication(); // add this line
+app.UseAuthentication();
 app.UseAuthorization();
+
+// Map controllers and SignalR hubs
 app.MapControllers();
+app.MapHub<NotificationHub>("/notificationHub");
+
 app.Run();
+

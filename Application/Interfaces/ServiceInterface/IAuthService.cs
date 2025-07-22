@@ -11,5 +11,6 @@ namespace Application.Interfaces.ServiceInterface
     {
         Task<ApiResponseDto<AuthResponseDto>> Login(LoginDto login);
         Task<ApiResponseDto<AuthResponseDto>> Register(RegisterDto register);
+        
     }
 }

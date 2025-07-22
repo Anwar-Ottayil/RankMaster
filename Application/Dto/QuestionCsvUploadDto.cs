@@ -10,6 +10,12 @@ namespace Application.Dto
     public class QuestionCsvUploadDto
     {
         public int ExamId { get; set; }
+
+
+        public int CategoryId { get; set; }
+
+
+
         public IFormFile File { get; set; }
     }
 }

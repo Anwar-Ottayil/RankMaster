@@ -15,11 +15,13 @@ namespace Application.Services
     {
         private readonly IRepository<Exam> _repository;
         private readonly IMapper _mapper;
+        private readonly INotificationService _notificationService;
 
-        public ExamService(IRepository<Exam> repository, IMapper mapper)
+        public ExamService(IRepository<Exam> repository, IMapper mapper, INotificationService notificationService)
         {
             _repository = repository;
             _mapper = mapper;
+            _notificationService = notificationService;
         }
 
         public async Task<IEnumerable<ExamDto>> GetAllExamsAsync()
@@ -40,14 +42,13 @@ namespace Application.Services
 
             var exams = _mapper.Map<List<Exam>>(examDtos);
 
-            // If your repository supports bulk insert, use it:
             await _repository.AddRangeAsync(exams);
 
-            // Otherwise, loop insert
-            //foreach (var exam in exams)
-            //{
-            //    await _repository.AddAsync(exam);
-            //}
+            // ✅ Send SignalR notification to all users
+            await _notificationService.SendNotificationToAll(
+                "New Exams Added",
+                $"{exams.Count} new exam(s) have been added. Check them out now!"
+            );
         }
 
         public async Task UpdateExamAsync(int id, ExamDto examDto)
@@ -66,6 +67,49 @@ namespace Application.Services
 
             await _repository.DeleteAsync(exam);
         }
+        public async Task<PagedResultDto<ExamDto>> GetPaginatedExamsAsync(int pageNumber, int pageSize)
+        {
+            var allExams = await _repository.GetAllAsync(); // consider optimizing later to DB-level paging
+            var totalCount = allExams.Count();
+
+            var pagedExams = allExams
+                .OrderByDescending(e => e.CreatedAt) // optional ordering
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            return new PagedResultDto<ExamDto>
+            {
+                Items = _mapper.Map<IEnumerable<ExamDto>>(pagedExams),
+                TotalCount = totalCount,
+                PageNumber = pageNumber,
+                PageSize = pageSize
+            };
+        }
+        public async Task<int> CreateExamAsync(CreateExamRequestDto dto)
+        {
+            var exam = new Exam
+            {
+                Title = dto.Title,
+                CategoryId = dto.CategoryId,
+                CreatedAt = DateTime.UtcNow
+            };
+
+            exam = await _repository.AddExamAsync(exam);
+
+            var questionIds = dto.QuestionIds.Distinct().ToList();
+
+            var examQuestions = questionIds.Select(qid => new ExamQuestion
+            {
+                ExamId = exam.Id,
+                QuestionId = qid
+            }).ToList();
+
+            await _repository.AddExamQuestionsAsync(examQuestions);
+
+            return exam.Id;
+        }
+
     }
 
 }
