@@ -8,8 +8,7 @@ namespace Application.Dto
 {
     public class CategoryDto
     {
-        //public int Id { get; set; }
-        public string Name { get; set; } // 10th, +2, Degree
+        public string Name { get; set; } 
     }
   
 }

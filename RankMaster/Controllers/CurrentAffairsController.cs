@@ -17,7 +17,6 @@ namespace RankMaster.Controllers
             _service = service;
         }
 
-        // Public View
         [HttpGet]
         [AllowAnonymous]
         public async Task<IActionResult> GetAll()
@@ -26,7 +25,6 @@ namespace RankMaster.Controllers
             return Ok(result);
         }
 
-        // Admin Upload
         [HttpPost]
         [Authorize(Roles = "Admin,Coordinator")]
         public async Task<IActionResult> Add([FromBody] CreateCurrentAffairDto dto)

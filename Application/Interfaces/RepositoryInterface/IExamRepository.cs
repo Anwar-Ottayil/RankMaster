@@ -12,11 +12,6 @@ namespace Application.Interfaces.RepositoryInterface
         Task<IEnumerable<Exam>> GetPaidExamsAsync();
         Task<IEnumerable<Exam>> GetFreeExamsAsync();
         Task<Exam> GetByIdAsync(int id);
-
-        
-
-
-
         
     }
 }

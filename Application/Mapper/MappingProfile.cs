@@ -41,15 +41,6 @@ namespace Application.Mapper
             CreateMap<ExamAnswer, ExamAnswerDto>();
             CreateMap<User, UserDto>().ReverseMap();
 
-
-
-
-
-
-
-
-
-
         }
     }
 }

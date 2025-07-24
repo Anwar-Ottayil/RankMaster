@@ -39,7 +39,6 @@ namespace Application.Services
             var created = await _repository.AddAnnouncementAsync(announcement);
             var announcementDto = _mapper.Map<AnnouncementDto>(created);
 
-            // ✅ Send SignalR + DB notification through NotificationService
             string title = "📢 New Announcement";
             string message = $"{announcement.Title}";
 

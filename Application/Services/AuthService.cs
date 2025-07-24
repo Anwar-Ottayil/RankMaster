@@ -60,8 +60,7 @@ namespace Application.Services
         {
 
 
-            //try
-            //{
+       
                 var isexist = (await _repository.GetAllAsync()).FirstOrDefault(e => e.Email.ToLower() == login.Email.ToLower());
                 if (isexist == null) return new ApiResponseDto<AuthResponseDto>(404, "Not Found");
 
@@ -69,16 +68,11 @@ namespace Application.Services
                 var result = HashPassword.VerifyHashedPassword(isexist, isexist.Password, login.Password);
                 if (result == PasswordVerificationResult.Failed) return new ApiResponseDto<AuthResponseDto>(406, "Incorrect password");
 
-                //var mapped = _mapper.Map<User>(login);
                 var Token = GenerateJwtToken(isexist);
 
                 var obj = new AuthResponseDto { Name = isexist.Name, Role = isexist.Role, Token = Token };
                 return new ApiResponseDto<AuthResponseDto>(200, "Login successfully", obj);
-            //}
-            //catch (Exception ex)
-            //{
-            //    return new ApiResponseDto<AuthResponseDto> ( 500,"something went wrong" + ex.Message);
-            //}
+         
 
 
         }

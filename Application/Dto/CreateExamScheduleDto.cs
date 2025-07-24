@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Application.Dto
 {
-    // Application/DTOs/ExamScheduleDto.cs
     public class CreateExamScheduleDto
     {
         public int ExamId { get; set; }

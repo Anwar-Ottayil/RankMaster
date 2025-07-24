@@ -18,7 +18,6 @@ namespace Application.Interfaces.RepositoryInterface
 
         Task AddRangeAsync(IEnumerable<T> entities);
 
-        //Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate);
 
 
 

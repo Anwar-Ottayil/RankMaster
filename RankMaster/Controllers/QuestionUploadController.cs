@@ -8,27 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace RankMaster.Controllers    
 {
-    //[ApiController]
-    //[Route("api/coordinator/questions")]
-    //public class QuestionUploadController : ControllerBase
-    //{
-    //    private readonly IQuestionService _questionService;
-
-    //    public QuestionUploadController(IQuestionService questionService)
-    //    {
-    //        _questionService = questionService;
-    //    }
-
-    //    [HttpPost("UploadCsv")]
-    //    public async Task<IActionResult> UploadCsv([FromForm] ExamAdddto dto)
-    //    {
-    //        if (dto.File == null || dto.File.Length == 0)
-    //            return BadRequest("File is empty.");
-
-    //        var result = await _questionService.UploadCsvAsync(dto.File, dto.ExamId, dto.CategoryId);
-    //        return Ok(result);
-    //    }
-    //}
+  
 
 
 

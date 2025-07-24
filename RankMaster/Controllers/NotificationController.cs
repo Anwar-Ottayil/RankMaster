@@ -15,9 +15,7 @@ namespace WebAPI.Controllers
             _notificationService = notificationService;
         }
 
-        /// <summary>
-        /// Send notification to a specific user.
-        /// </summary>
+       
         [Authorize(Roles = "Admin,Coordinator")]
 
         [HttpPost("send-to-user")]
@@ -27,9 +25,7 @@ namespace WebAPI.Controllers
             return Ok($"Notification sent to user {userId}");
         }
 
-        /// <summary>
-        /// Broadcast notification to all connected users.
-        /// </summary>
+      
         [Authorize(Roles = "Admin,Coordinator")]
 
         [HttpPost("send-to-all")]
@@ -39,9 +35,6 @@ namespace WebAPI.Controllers
             return Ok("Notification sent to all users.");
         }
 
-        /// <summary>
-        /// Get all notifications for a specific user.
-        /// </summary>
         [HttpGet("user/{userId}")]
         public async Task<IActionResult> GetUserNotifications(int userId)
         {

@@ -13,7 +13,6 @@ namespace Application.Interfaces.ServiceInterface
         Task<ExamDto> GetExamByIdAsync(int id);
         Task AddExamsAsync(List<ExamDto> examDtos);
 
-        //Task AddExamAsync(ExamDto examDto);
         Task UpdateExamAsync(int id, ExamDto examDto);
         Task DeleteExamAsync(int id);
 

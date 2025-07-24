@@ -44,7 +44,6 @@ namespace Application.Services
 
             await _repository.AddRangeAsync(exams);
 
-            // ✅ Send SignalR notification to all users
             await _notificationService.SendNotificationToAll(
                 "New Exams Added",
                 $"{exams.Count} new exam(s) have been added. Check them out now!"
@@ -69,11 +68,11 @@ namespace Application.Services
         }
         public async Task<PagedResultDto<ExamDto>> GetPaginatedExamsAsync(int pageNumber, int pageSize)
         {
-            var allExams = await _repository.GetAllAsync(); // consider optimizing later to DB-level paging
+            var allExams = await _repository.GetAllAsync();
             var totalCount = allExams.Count();
 
             var pagedExams = allExams
-                .OrderByDescending(e => e.CreatedAt) // optional ordering
+                .OrderByDescending(e => e.CreatedAt) 
                 .Skip((pageNumber - 1) * pageSize)
                 .Take(pageSize)
                 .ToList();

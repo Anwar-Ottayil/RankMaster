@@ -25,7 +25,7 @@ namespace WebAPI.Controllers
             _mapper = mapper;
         }
 
-        [Authorize] // Ensure the route is protected
+        [Authorize] 
         [HttpPost("submit")]
         public async Task<IActionResult> SubmitAttempt([FromBody] ExamAttemptCreateDto dto)
         {
@@ -38,7 +38,7 @@ namespace WebAPI.Controllers
             var attempt = new ExamAttempt
             {
                 ExamId = dto.ExamId,
-                UserId = userId, // Automatically from token
+                UserId = userId,
                 AttemptedAt = DateTime.UtcNow,
                 Answers = new List<ExamAnswer>()
             };

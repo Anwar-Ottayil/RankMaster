@@ -8,16 +8,15 @@ namespace WebAPI.Controllers.Admin
 
     [Route("api/Admin")]
     [ApiController]
-    public class AdminUsersController : ControllerBase
+    public class UsersController : ControllerBase
     {
         private readonly IUserService _userService;
 
-        public AdminUsersController(IUserService userService)
+        public UsersController(IUserService userService)
         {
             _userService = userService;
         }
 
-        // GET: api/admin/users
         [HttpGet]
         public async Task<IActionResult> GetAllUsers()
         {
@@ -25,7 +24,6 @@ namespace WebAPI.Controllers.Admin
             return Ok(users);
         }
 
-        // GET: api/admin/users/{id}
         [HttpGet("{id}")]
         public async Task<IActionResult> GetUserById(int id)
         {
@@ -35,7 +33,6 @@ namespace WebAPI.Controllers.Admin
             return Ok(user);
         }
 
-        // DELETE: api/admin/users/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {

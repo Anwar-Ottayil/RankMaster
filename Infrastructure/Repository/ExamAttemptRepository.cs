@@ -53,8 +53,8 @@ namespace Infrastructure.Repository
         public async Task<IEnumerable<ExamAttempt>> GetAllAsync()
         {
             return await _context.ExamAttempts
-                .Include(a => a.Exam)     // Needed for accessing CategoryId
-                .Include(a => a.Answers)  // Optional: If you need answers too
+                .Include(a => a.Exam)   
+                .Include(a => a.Answers) 
                 .ToListAsync();
         }
         public async Task<int> GetTotalScoreByUserIdAsync(int userId, int categoryId, int examId)
@@ -63,7 +63,7 @@ namespace Infrastructure.Repository
                 .Where(a => a.UserId == userId &&
                             a.ExamId == examId &&
                             a.Exam.CategoryId == categoryId)
-                .Include(a => a.Exam) // Make sure Exam is included to access CategoryId
+                .Include(a => a.Exam) 
                 .SumAsync(a => a.Score);
         }
         public async Task<List<ExamAttempt>> GetScoresByExamAndCategoryAsync(int examId, int categoryId)

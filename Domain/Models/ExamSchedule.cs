@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Domain.Models
 {
-    // Domain/Models/ExamSchedule.cs
     public class ExamSchedule
     {
         public int Id { get; set; }
@@ -14,7 +13,7 @@ namespace Domain.Models
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
 
-        public Exam Exam { get; set; }  // Navigation
+        public Exam Exam { get; set; }  
     }
 
 }

@@ -34,7 +34,7 @@ namespace Infrastructure.Repository
         public async Task<Exam> GetByIdAsync(int id)
         {
             return await _context.Exams
-                .Include(e => e.Category) // optional, if needed
+                .Include(e => e.Category) 
                 .FirstOrDefaultAsync(e => e.Id == id);
         }
 

@@ -29,21 +29,18 @@ namespace Infrastructure.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // Category Configuration
             modelBuilder.Entity<Category>(entity =>
             {
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
             });
 
-            // Exam - Category relationship
             modelBuilder.Entity<Exam>()
                 .HasOne(e => e.Category)
                 .WithMany(c => c.Exams)
                 .HasForeignKey(e => e.CategoryId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            // Question properties
             modelBuilder.Entity<Question>().Property(q => q.Text).IsRequired();
             modelBuilder.Entity<Question>().Property(q => q.OptionA).IsRequired();
             modelBuilder.Entity<Question>().Property(q => q.OptionB).IsRequired();
@@ -51,20 +48,17 @@ namespace Infrastructure.Data
             modelBuilder.Entity<Question>().Property(q => q.OptionD).IsRequired();
             modelBuilder.Entity<Question>().Property(q => q.CorrectOption).IsRequired();
 
-            // Question - Exam relationship
             modelBuilder.Entity<Question>()
                 .HasOne(q => q.Exam)
                 .WithMany(e => e.Questions)
                 .HasForeignKey(q => q.ExamId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            // User - CoordinatorCategory relationship
             modelBuilder.Entity<User>()
                 .HasMany(u => u.CoordinatorCategories)
                 .WithOne(cc => cc.Coordinator)
                 .HasForeignKey(cc => cc.CoordinatorId);
 
-            // CurrentAffairs config
             modelBuilder.Entity<CurrentAffair>(entity =>
             {
                 entity.ToTable("CurrentAffairs");
@@ -75,13 +69,11 @@ namespace Infrastructure.Data
                 entity.Property(c => c.IsPublic).HasDefaultValue(true);
             });
 
-            // ExamSchedule - Exam relationship
             modelBuilder.Entity<ExamSchedule>()
                 .HasOne(e => e.Exam)
                 .WithMany()
                 .HasForeignKey(e => e.ExamId);
 
-            // ✅ ExamAttempt configuration
             modelBuilder.Entity<ExamAttempt>(entity =>
             {
                 entity.HasKey(ea => ea.Id);
@@ -97,7 +89,6 @@ namespace Infrastructure.Data
                       .OnDelete(DeleteBehavior.Cascade);
             });
 
-            // ✅ ExamAnswer configuration
             modelBuilder.Entity<ExamAnswer>(entity =>
             {
                 entity.HasKey(ea => ea.Id);

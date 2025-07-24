@@ -57,7 +57,6 @@ namespace Application.Services
         {
             try
             {
-                // Check for duplicate (case-insensitive)
                 var existingCategory = await _repository.FindByNameAsync(dto.Name);
                 if (existingCategory != null)
                 {

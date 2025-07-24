@@ -10,7 +10,7 @@ namespace Domain.Models
         public int ExamId { get; set; }
         public Exam Exam { get; set; }
 
-        public int UserId { get; set; } // Assuming User table exists
+        public int UserId { get; set; } 
         public User User { get; set; }
 
         public DateTime AttemptedAt { get; set; } = DateTime.UtcNow;

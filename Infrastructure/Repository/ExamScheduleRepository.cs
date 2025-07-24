@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Repository
 {
-    // Infrastructure/Repositories/ExamScheduleRepository.cs
     public class ExamScheduleRepository : IExamScheduleRepository
     {
         private readonly AppDbContext _context;

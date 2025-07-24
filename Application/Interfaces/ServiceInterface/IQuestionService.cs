@@ -10,7 +10,6 @@ namespace Application.Interfaces.ServiceInterface
 {
     public interface IQuestionService
     {
-        //Task<string> UploadCsvAsync(IFormFile file, int examId, int Categoryid);
 
         Task<string> UploadQuestionsFromCsvAsync(QuestionCsvUploadDto dto);
 

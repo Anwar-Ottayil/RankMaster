@@ -13,6 +13,5 @@ namespace Application.Interfaces.ServiceInterface
 
 
         Task<List<ReadQuestionDto>> GetAllQuestionsByExamAsync(int examId);
-        //Task GetQuestionsByCategoryAndExamAsync(int categoryId, int examId);
     }
 }

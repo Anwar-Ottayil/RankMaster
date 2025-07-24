@@ -15,7 +15,6 @@ public class NotificationService : INotificationService
         _hubContext = hubContext;
     }
 
-    // ✅ Send notification to a specific user
     public async Task SendNotification(int recipientId, string title, string message)
     {
         var notification = new Notification
@@ -32,12 +31,11 @@ public class NotificationService : INotificationService
             .SendAsync("ReceiveNotification", title, message);
     }
 
-    // ✅ Send notification to all connected users
     public async Task SendNotificationToAll(string title, string message)
     {
         var notification = new Notification
         {
-            RecipientId = 0, // Or -1 or NULL if not for a specific user
+            RecipientId = 0, 
             Title = title,
             Message = message
         };

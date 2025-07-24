@@ -17,7 +17,6 @@ namespace RankMaster.Controllers
             _scheduleService = scheduleService;
         }
 
-        // POST: api/admin/schedule-exam
         [Authorize(Roles = "Admin,Coordinator")]
 
         [HttpPost("schedule-exam")]

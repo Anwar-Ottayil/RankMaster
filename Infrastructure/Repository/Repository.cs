@@ -50,10 +50,7 @@ namespace Infrastructure.Repository
             await _context.SaveChangesAsync();
         }
 
-        //public async Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate)
-        //{
-        //    return await _dbset.Where(predicate).ToListAsync();
-        //}
+        
 
 
 

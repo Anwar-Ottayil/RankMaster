@@ -24,7 +24,6 @@ namespace Application.Services
 
         public async Task RegisterCoordinatorAsync(CreateCoordinatorDto dto)
         {
-            // Check if user already exists
             var existing = await _userRepo.GetByEmailAsync(dto.Email.Trim());
             if (existing != null)
                 throw new Exception("User with this email already exists");
@@ -33,7 +32,7 @@ namespace Application.Services
             {
                 Name = dto.Name,
                 Email = dto.Email,
-                Password = dto.Password ,// hash in real scenarios
+                Password = dto.Password ,
                 Role = "Coordinator"
             };
             var hasher = new PasswordHasher<User>();
