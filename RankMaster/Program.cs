@@ -6,6 +6,7 @@ using Application.Interfaces.ServiceInterface;
 using Application.Mapper;
 using Application.Service;
 using Application.Services;
+using Application.Settings;
 using Domain.Models;
 using Infrastructure.Data;
 using Infrastructure.Repository;
@@ -62,6 +63,13 @@ builder.Services.AddScoped<IAnnouncementService, AnnouncementService>();
 
 builder.Services.AddScoped<IExamServiceIspaid, ExamServiceIspaid>();
 builder.Services.AddScoped<IUserService, UserService>();
+
+builder.Services.AddScoped<IWalletRepository, WalletRepository>();
+builder.Services.AddScoped<IWalletService, WalletService>();
+
+
+builder.Services.Configure<RazorpaySettings>(builder.Configuration.GetSection("Razorpay"));
+
 
 // Add SignalR
 builder.Services.AddSignalR();

@@ -1,5 +1,6 @@
 ﻿using Application.Dto;
 using AutoMapper;
+using Domain.Model;
 using Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -40,6 +41,9 @@ namespace Application.Mapper
             CreateMap<ExamAttempt, ExamAttemptResultDto>();
             CreateMap<ExamAnswer, ExamAnswerDto>();
             CreateMap<User, UserDto>().ReverseMap();
+
+            CreateMap<WalletTransaction, WalletTransactionResponseDto>();
+
 
         }
     }
